@@ -91,3 +91,74 @@ th, td {
     margin: 0;
   }
 }
+
+/* ============================
+   MOBILE RESPONSIVE PROGRESS
+   ============================ */
+@media (max-width: 600px) {
+  .progress-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+  }
+
+  /* Vertical line */
+  .progress-bar::before {
+    content: "";
+    position: absolute;
+    left: 15px; /* aligns with center of circles */
+    top: 0;
+    width: 3px;
+    height: 100%;
+    background: #ccc;
+    z-index: 0;
+  }
+
+  .progress-step {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    text-align: left;
+    position: relative;
+    z-index: 1;
+  }
+
+  .circle {
+    margin: 0;
+  }
+
+  /* Active step line color update */
+  .progress-step.active .circle {
+    background: #4caf50;
+  }
+  .progress-step.on-hold .circle {
+    background: #d40f12;
+  }
+}
+
+/* ============================
+   MOBILE RESPONSIVE SECTIONS
+   ============================ */
+@media (max-width: 600px) {
+  /* Shipment Profile columns stack */
+  .profile-columns {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .column {
+    width: 100%;
+  }
+
+  /* Description & travel tables scroll on mobile */
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  th, td {
+    white-space: nowrap;
+  }
+}
+
