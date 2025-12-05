@@ -72,3 +72,22 @@ th, td {
   background-color: #d40f12; 
   color: #fff;
 }
+
+/* Make progress vertical on mobile */
+@media (max-width: 600px) {
+  .progress-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .progress-step {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    text-align: left;
+  }
+
+  .circle {
+    margin: 0;
+  }
+}
