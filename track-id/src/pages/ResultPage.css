@@ -136,3 +136,16 @@ th, td {
   }
 }
 
+/* Make shipment profile vertical on mobile */
+@media (max-width: 600px) {
+  .profile-columns {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .column {
+    width: 100%;
+  }
+}
+
+
