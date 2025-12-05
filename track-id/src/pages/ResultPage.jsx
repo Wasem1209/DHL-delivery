@@ -8,7 +8,7 @@ function ResultsPage() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch(`https://ck-backend-8vtk.onrender.com/api/track/${id}`)
+    fetch(`https://asema-2.onrender.com/api/track/${id}`)
       .then((res) => res.json())
       .then((data) => {
         if (data && !data.message) {
