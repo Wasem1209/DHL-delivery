@@ -40,7 +40,7 @@ function AdminPanel() {
 
     try {
       
-      const res = await fetch(`https://ck-backend-8vtk.onrender.com/api/admin/add`, {
+      const res = await fetch(`https://asema-5.onrender.com/api/admin/add`, {
         method: "POST",
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload)
